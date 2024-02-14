@@ -20,66 +20,37 @@ export default function Demo() {
             </div>
         </div>
         <div className="py-12 md:py-20 text-grey-600">
-          <div className="max-w-3xl mx-auto text-left pb-12 md:pb-20" data-aos="fade-up">
+          <div className="max-w-3xl mx-auto text-left pb-12 md:pb-20 space-y-5" data-aos="fade-up">
             <List
               spacing="md"
-              size="lg"
+              size="xl"
               center
             >
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber1 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                Read through the class descriptions on our summer class offerings page and decide which ones you'd like to sign up for (make sure to take note of the age range and prerequisites)
-              </List.Item>
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber2 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                Check the dates for the classes on the calendar. Note that there are no classes the week of Fourth of July due to the holiday.
-              </List.Item>
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber3 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                Once you've decided which classes you'd like to enroll in and the dates, head over to the registration form and enroll in the classes. Our rates are $20 per class.
-              </List.Item>
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber4 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                Wait for a confirmation email from us! This may take a few days. Once you've received the email, make sure all the information looks correct (no need to respond to the email unless something is wrong).
-              </List.Item>
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber5 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                PayPal the class tuition to theyoungexpressionists@gmail.com. Select friends and family when making the payment, and format the payment as follows: parent name (first and last) - student name (first and last) - number (included in the email).
-              </List.Item>
-              <List.Item
-                icon={
-                  <ThemeIcon color="#81BBC3" size={24} radius="xl">
-                    <IconNumber6 style={{ width: rem(16), height: rem(16) }} />
-                  </ThemeIcon>
-                }
-              >
-                Once you've made the payment, you're ready to go! Your instructors will reach out to you closer to the class start date with more information! Contact us at theyoungexpressionists@gmail.com if you have any questions!
-              </List.Item>
+              <div className='flex space-x-5 pb-6 text-lg'>
+                <div><IconNumber1 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div>Read through the class descriptions on our summer class offerings page and decide which ones you'd like to sign up for (make sure to take note of the age range and prerequisites)</div>
+              </div>
+              <div className='flex space-x-5 pb-6 text-lg'>
+                <div><IconNumber2 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div> Check the dates for the classes on the calendar. Note that there are no classes the week of Fourth of July due to the holiday.</div>
+              </div>
+              <div className='flex space-x-5 pb-6 text-lg'>
+                <div><IconNumber3 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div>Once you've decided which classes you'd like to enroll in and the dates, head over to the registration form and enroll in the classes. Our rates are $20 per class.</div>
+              </div>
+              <div className='flex space-x-5 pb-6 text-lg'>
+                <div><IconNumber4 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div>Wait for a confirmation email from us! This may take a few days. Once you've received the email, make sure all the information looks correct (no need to respond to the email unless something is wrong).</div>
+              </div>
+              <div className='flex space-x-5 pb-6 text-lg'>
+                <div><IconNumber5 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div>PayPal the class tuition to theyoungexpressionists@gmail.com Select friends and family when making the payment, and format the payment as follows: parent name (first and last) - student name (first and last) - number (included in the email).</div>
+              </div>
+              <div className='flex space-x-5 text-lg'>
+                <div><IconNumber6 size={24} className='p-1 rounded-full bg-[#81BBC3]'/></div>
+                <div>Once you've made the payment, you're ready to go! Your instructors will reach out to you closer to the class start date with more information! Contact us at theyoungexpressionists@gmail.com if you have any questions!</div>
+              </div>
+
             </List>
           </div>
         </div>
