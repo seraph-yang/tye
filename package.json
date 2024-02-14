@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@mantine/core": "^7.5.2",
     "@tabler/icons-react": "^2.47.0",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.42",
