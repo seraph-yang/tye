@@ -61,8 +61,6 @@ const charactersList = [
 
 interface AccordionLabelProps {
   label: string;
-  image: string;
-  description: string;
 }
 
 function AccordionLabel({ label }: AccordionLabelProps) {
@@ -93,8 +91,8 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Our Mission</h2>
-            <p className="text-xl text-gray-600">The Young Expressionists (TYE) was founded in April 2020 with the sole mission of helping the community. When lockdown first began, many students missed out on their regular activities. We, a group of dedicated high school students, saw the opportunity to make an impact on the community through education. Since then, we have been offering online classes in a variety of classes. Each class is hosted by a high school instructor in a subject that they are both talented and passionate for. In addition to our summer classes, we also host events like competitions, monthly guest speakers, and more! As a nonprofit, all of our funds go directly back to the community to support our core values of education and community service. Come join us on our journey!</p>
+            <h2 className="h2 mb-4" data-aos="fade-up">Our Mission</h2>
+            <p className="text-xl text-gray-600" data-aos="fade-up">The Young Expressionists (TYE) was founded in April 2020 with the sole mission of helping the community. When lockdown first began, many students missed out on their regular activities. We, a group of dedicated high school students, saw the opportunity to make an impact on the community through education. Since then, we have been offering online classes in a variety of classes. Each class is hosted by a high school instructor in a subject that they are both talented and passionate for. In addition to our summer classes, we also host events like competitions, monthly guest speakers, and more! As a nonprofit, all of our funds go directly back to the community to support our core values of education and community service. Come join us on our journey!</p>
           </div>
         </div>
       </div>
@@ -103,7 +101,7 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Frequently Asked Questions</h2>
+            <h2 className="h2 mb-4" data-aos="fade-up">Frequently Asked Questions</h2>
             <Accordion chevronPosition="right" variant="contained">
               {items}
             </Accordion>

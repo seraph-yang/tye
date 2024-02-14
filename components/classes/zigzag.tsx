@@ -6,10 +6,10 @@ import { IconNumber1, IconNumber2, IconNumber3, IconNumber4, IconNumber5, IconNu
 export default function Demo() {
   return (
     <section>
-      <div className="font-inter max-w-3xl mx-auto px-4 sm:px-6 pt-24">
+      <div className="font-inter max-w-3xl mx-auto px-4 sm:px-6 pt-36">
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 className="h2 mb-4">Our Classes</h2>
-          <p className="text-xl text-gray-600">Check back here for our summer classes when registrations open! Join our mailing list to be notified.</p>
+          <h2 className="h2 mb-4" data-aos="fade-up">Our Classes</h2>
+          <p className="text-xl text-gray-600" data-aos="fade-up">Check back here for our summer classes when registrations open! Join our mailing list to be notified.</p>
           <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pt-5">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Class schedule</a>
@@ -20,7 +20,7 @@ export default function Demo() {
             </div>
         </div>
         <div className="py-12 md:py-20 text-grey-600">
-          <div className="max-w-3xl mx-auto text-left pb-12 md:pb-20">
+          <div className="max-w-3xl mx-auto text-left pb-12 md:pb-20" data-aos="fade-up">
             <List
               spacing="md"
               size="lg"

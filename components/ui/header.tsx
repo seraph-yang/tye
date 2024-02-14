@@ -61,7 +61,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
+                <Link href="mailto:admin@theyoungexpressionists.org" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
                   Contact
                 </Link>
               </li>

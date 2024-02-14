@@ -24,7 +24,7 @@ export default function Testimonials() {
               <div className="h4 mb-4">Join our organization</div>
               <blockquote className="text-lg text-gray-500 grow">We're always looking for more passionate volunteers to join our team! Fill out the form below with any inquires. We would love to partner with your organization, have you as an instructor, or as a guest speaker!</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-500 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-500 not-italic">Fill out our </cite> <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">application</a>
               </div>
             </div>
 
@@ -33,7 +33,7 @@ export default function Testimonials() {
               <div className="h4 mb-4">Follow us on social media</div>
               <blockquote className="text-lg text-gray-500 grow">To stay in the loop with all the things going on at The Young Expressionists, be sure to check out our socials! You can also subscribe to our email list or contact us at admin@theyoungexpressionists.org.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-500 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-500 not-italic">Find us</cite> <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://instagram.com/theyoungexpressionists">@theyoungexpressionists</a>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function Testimonials() {
               <div className="h4 mb-4">Share your testimony</div>
               <blockquote className="text-lg text-gray-500 grow">If you had a positive experience with TYE, please take a minute to leave us your testimony! We gratly value and appreciate any feedback you give us! You can compliment a specific instructor, tell us about a class, or even just leave us some encouragement.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-500 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-500 not-italic">Submit a testimony</cite> <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">here</a>
               </div>
             </div>
 

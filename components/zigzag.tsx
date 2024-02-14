@@ -29,7 +29,7 @@ export default function Zigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Learn more</div>
+                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Learn more!</div>
                   <h3 className="h3 mb-3">Classes</h3>
                   <p className="text-xl text-gray-600 mb-4">We teach classes on a variety of topics to students worldwide in hopes of inspiring them. TYE's classes center around "passion areas" rather than focusing on academic subjects. Previous classes have included public speaking, art, photography, and many more! Our instructors are qualified high school students with big passions and hearts to serve the community. </p>
                  
@@ -46,7 +46,7 @@ export default function Zigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">More speed. Less spend</div>
+                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Fun for everyone!</div>
                   <h3 className="h3 mb-3">Events</h3>
                   <p className="text-xl text-gray-600 mb-4">Besides our classes, we also host fun events to engage our community! We've held all kinds of events ranging from writing competitinos to our monthly Guest Speaker Series! We love to foster our existing community and also welcome new people through our wide variety of events throughout the year!</p>
                 </div>
@@ -62,7 +62,7 @@ export default function Zigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">More speed. Less spend</div>
+                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Accessible for all!</div>
                   <h3 className="h3 mb-3">Outreach</h3>
                   <p className="text-xl text-gray-600 mb-4">Here at TYE, we're all about serving and giving back to the community. That's why 100% of the profits from our classes will go directly to our outreach program, The Young Expressinists Global Outreach (TYEGO) in the form of sponsorshops, buying materials, etc. For more information, please check out our FAQs, or our Global Outreach page!</p>
                 </div>

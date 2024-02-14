@@ -1,22 +1,19 @@
 export const metadata = {
-  title: 'About - The Young Expressionists',
-  description: '',
+  title: 'Class Information - The Young Expressionists',
+  description: 'Page description',
 }
 
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
-import Zigzag from '@/components/zigzag'
-import Testimonials from '@/components/testimonials'
+import Zigzag from '@/components/tyego/tyego'
+import Testimonials from '@/components/tyego/countries'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Features />
       <Zigzag />
       <Testimonials />
-      <Newsletter />
     </>
   )
 }
