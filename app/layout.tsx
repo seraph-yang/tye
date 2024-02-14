@@ -2,6 +2,8 @@ import './css/style.css'
 
 import { Inter, Architects_Daughter } from 'next/font/google'
 
+import { MantineProvider } from '@mantine/core'
+
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
 
@@ -33,7 +35,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white-900 text-grey-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          {children}
+          <MantineProvider>{children}</MantineProvider>
         </div>
       </body>
     </html>
