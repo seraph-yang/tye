@@ -1,0 +1,114 @@
+---
+const questions = [
+  {
+    id: 'faq-1',
+    title: 'Is there a cancellation policy?',
+    answer:
+      "Since all of our profits are donated back into the community, we do no offer refunds unless the class is canceled. However, if your student can't make a class because of time conflicts, reach out and let the instructor know; they will happily give you the class material to catch up.",
+  },
+  {
+    id: 'faq-2',
+    title: 'I don\'t use PayPal. Does TYE accept other forms of payments?',
+    answer:
+      'Yes! Please reach out to us at theyoungexpressionists@gmail.com for more information on alternative payment methods.',
+  },
+  {
+    id: 'faq-3',
+    title: "Who teaches TYE's classes?",
+    answer:
+      'All of our classes are student-run; we have a training process to make sure all of our instructors can host quality classes.',
+  },
+  {
+    id: 'faq-4',
+    title: "I've registered for a class, but haven't recieved any information from the instructor yet. What should I do?",
+    answer:
+      "Instructors will send class information including the Zoom link a couple days prior to the class start date. If you do not receive the information by then, please reach out to us at theyoungexpressionists@gmail.com; we'll connect you with the instructor right away",
+  },
+  {
+    id: 'faq-5',
+    title: 'Does TYE offer financial assistance?',
+    answer:
+      'Yes! Please reach out to us at admin@theyoungexpressionists.org for more information.',
+  },
+  {
+    id: 'faq-6',
+    title: 'I\'m not satisfied with a class. What do I do?',
+    answer:
+      "We're sorry you are not satisfied. We try our best to guarantee high-quality classes, but if you have any issues with the instructor or the class, please reach out to us and let us know!",
+  },
+  {
+    id: 'faq-7',
+    title: 'I\'m not sure if a class is right for my student. What should I do?',
+    answer:
+      "Please reach out to the instructor or to us at theyoungexpressionists@gmail.com. We'd be happy to provide you with additional class information to help you with class selections!",
+  },
+  {
+    id: 'faq-8',
+    title: 'Who creates the class curriculum?',
+    answer:
+      "All class curriculum/information is created by our instructors and approved through our adult mentors/advisors to guarantee quality classes.",
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
+      <div>
+        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Frequently asked questions</h2>
+      </div>
+      <div class="lg:col-span-2">
+        <dl
+          class="-mt-3"
+          x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
+        >
+          {
+            questions.map((question, index) => (
+              <div
+                class="rounded-3xl px-4 transition"
+                x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected } }`}
+                x-bind:class="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
+              >
+                <dt
+                  class="border-b text-lg transition"
+                  x-cloak
+                  x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }"
+                >
+                  <button
+                    type="button"
+                    class="group block w-full py-6 text-left transition focus-visible:outline-none"
+                    aria-controls={question.id}
+                    x-on:click="toggle(id)"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="isOpen.toString()"
+                  >
+                    <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
+                      <span class="font-medium">{question.title}</span>
+                      <span class="ml-6 flex h-7 items-center">
+                        <svg
+                          class="text-primary-600 dark:text-primary-400 h-6 w-6 rotate-0 transform transition duration-200 ease-in-out"
+                          x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z" />
+                        </svg>
+                      </span>
+                    </div>
+                  </button>
+                </dt>
+                <dd class="pb-6 pr-6" id={question.id} x-show="isOpen" x-cloak x-collapse>
+                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                    {question.answer}
+                  </p>
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

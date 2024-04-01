@@ -1,0 +1,112 @@
+---
+const pricing = [
+  {
+    name: 'Kristina Guo',
+    description: 'In this class, students will create fun crafts together each day and learn how to sketch simple drawings. Topping it off with markers and colored pencils, the crafts will become complete with vibrant colors. By the end of the week, students can finish this camp with 5 complete projects to decorate your house with!',
+    periodicity: '',
+    price: 'Arts & Crafts',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+  {
+    name: 'Jenny Hu',
+    description: "Students will learn the components of a strong speech as well as the fundamentals of public forum debate. This will allow them to develop critical thinking skills and also gain more exposure to argumentation. These skills can be applied to the daily lives as well while helping students explore their interests.",
+    isFlagged: true,
+    periodicity: '',
+    price: 'Speech & Debate',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+  {
+    name: 'Emma Zhang',
+    description: "In this creative writing workshop, students will learn the fundamentals of storytelling, character development, and descriptive language through fun and interactive lessons. The workshop is suitable for both novice and experienced writers—anybody who has a passion for writing is welcome to join!",
+    periodicity: '',
+    price: 'Creative Writing',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+  {
+    name: 'Kira Ferrandini',
+    description: "This course will introduce students to basic conversational Portuguese. Students will learn the phonetic structure of the Portuguese language as well as build a foundational vocabulary for basic sentence structure. In this class students will learn by playing games, listening to comprehensive input, doing flashcards and more. By the end of the course students will master basic greetings and common words and be able to hold a short conversation regarding a topic of their choosing.",
+    isFlagged: true,
+    periodicity: '',
+    price: 'Portuguese',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+  {
+    name: 'Nicholas Maloney',
+    description: "Programming is a very useful skill that can be used in finance, engineering, game design, and many other fields. In this introductory Python class you will learn the key parts of programming using a language called Python, including variables, functions, classes, methods, and useful basic libraries. You will design basic games using Arcade Python. You will also learn how to edit images using a library called PIL. Here is my github if you want to check it out:",
+    periodicity: '',
+    price: 'Programming: Python',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+  {
+    name: 'Jacqueline Lao',
+    description: "This class will cover the basics of music theory including note names, scales, and rhythm. Whether or not the student plays an instrument, they will be able to apply these essential music skills to their daily lives!",
+    isFlagged: true,
+    periodicity: '',
+    price: 'Music Theory',
+    action: 'Register',
+    features: [],
+    link: "",
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
+      {
+        pricing.map((item) => (
+          <div
+            class:list={[
+              'relative flex flex-col gap-8 rounded-3xl p-8',
+              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
+            ]}
+          >
+            <div class="flex-1">
+              <p class="mt-4 flex items-baseline">
+                <span class="text-4xl font-medium tracking-tight">{item.price}</span>
+                <span class="text-primary-950/70 dark:text-primary-200/70 ml-1 text-sm font-medium">
+                  {item.periodicity}
+                </span>
+              </p>
+              <h2 class="text-xl font-medium">{item.name}</h2>
+              <p class="text-primary-950/70 dark:text-primary-200/70 mt-6">{item.description}</p>
+
+              <ul role="list" class="mt-6 space-y-6">
+                {item.features.map((feature) => (
+                  <li class="flex gap-3">
+                    <svg
+                      class="text-primary-600 dark:text-primary-400 h-6 w-6 flex-shrink-0"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" />
+                    </svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <a
+              href={item.link}
+              class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Register
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

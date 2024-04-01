@@ -1,32 +1,25 @@
 {
-  "name": "tye",
-  "version": "0.1.0",
-  "private": true,
+  "name": "the-young-expressionists",
+  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@mantine/core": "^7.5.2",
-    "@tabler/icons-react": "^2.47.0",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.42",
-    "@types/react-dom": "^18.2.17",
-    "aos": "^3.0.0-beta.6",
-    "flowbite": "^2.2.1",
-    "next": "^14.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
-    "@types/aos": "^3.0.7",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.3.6"
+    "@alpinejs/collapse": "3.12.3",
+    "@astrojs/tailwind": "4.0.0",
+    "@fontsource/inter": "5.0.8",
+    "@types/alpinejs": "3.7.2",
+    "alpinejs": "3.12.3",
+    "astro": "2.10.13",
+    "astro-compress": "2.0.14",
+    "prettier": "3.0.2",
+    "prettier-plugin-astro": "0.12.0",
+    "prettier-plugin-tailwindcss": "0.5.3",
+    "tailwindcss": "3.3.3"
   }
 }

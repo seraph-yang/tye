@@ -1,0 +1,22 @@
+---
+import Post from '../components/magazine/Post.astro';
+import Heading from '../components/magazine/Heading.astro';
+import Layout from '../layouts/Layout.astro';
+const allPosts = await Astro.glob("../pages/magazine/*.md");
+---
+
+<Layout
+  description="The Young Expressionists is a 501(c)(3) not-for-profit organization created for students across the world."
+  title="The Young Expressionists"
+>
+  <Heading />
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col gap-12 sm:gap-16">
+        <div class="grid gap-8 lg:grid-cols-3">
+          {allPosts.map((post) => <Post url={post.url} title={post.frontmatter.title} author={post.frontmatter.author} step={post.frontmatter.step} description={post.frontmatter.description} />)}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

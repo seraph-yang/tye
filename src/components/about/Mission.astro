@@ -1,0 +1,57 @@
+---
+const stats = [
+  {
+    name: 'Raised',
+    value: '$11,000+',
+  },
+  {
+    name: 'Students',
+    value: '700+',
+  },
+  {
+    name: 'Volunteers',
+    value: '100+',
+  },
+  {
+    name: 'Classes',
+    value: "100+",
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <img
+        class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+        width="576"
+        height="864"
+        src="/assets/about1.JPG"
+        alt="Our experts working together"
+      />
+      <div class="flex flex-col gap-10">
+        <!-- Mission description -->
+        <div class="space-y-8 sm:space-y-12">
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
+          <div class="space-y-6">
+            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+              The Young Expressionists (TYE) was founded in April 2020 with the sole mission of helping the community. When lockdown first began, many students missed out on their regular activities. We, a group of dedicated high school students, saw the opportunity to make an impact on the community through education. Since then, we have been offering online classes in a variety of classes. Each class is hosted by a high school instructor in a subject that they are both talented and passionate for. In addition to our summer classes, we also host events like competitions, monthly guest speakers, and more! As a nonprofit, all of our funds go directly back to the community to support our core values of education and community service. Come join us on our journey!
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {
+            stats.map((stat) => (
+              <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
+                <dt class="text-base">{stat.name}</dt>
+                <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

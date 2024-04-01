@@ -1,0 +1,45 @@
+---
+const services = [
+  {
+    step: '01',
+    name: 'Classes',
+    description:
+      "We teach classes on a variety of topics to students worldwide in hopes of inspiring them. TYE's classes center around \"passion areas\" rather than focusing on academic subjects. Previous classes have included public speaking, art, photography, and many more! Our instructors are qualified high school students with big passions and hearts to serve the community. ",
+  },
+  {
+    step: '02',
+    name: 'Events',
+    description:
+      "Besides our classes, we also host fun events to engage our community! We've held all kinds of events ranging from writing competitinos to our monthly Guest Speaker Series! We love to foster our existing community and also welcome new people through our wide variety of events throughout the year!",
+  },
+  {
+    step: '03',
+    name: 'Outreach',
+    description:
+      "Here at TYE, we're all about serving and giving back to the community. That's why 100% of the profits from our classes will go directly to our outreach program, The Young Expressinists Global Outreach (TYEGO) in the form of sponsorshops, buying materials, etc. For more information, please check out our FAQs, or our Global Outreach page!",
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+              <p class="text-sm">{service.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{service.name}</h3>
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

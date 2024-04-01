@@ -1,0 +1,59 @@
+---
+const values = [
+  [
+    {
+      ref: '01',
+      name: 'Commitment to Community Impact',
+      description:
+        'At TYE, we are deeply committed to making a positive impact on our community. We recognize the importance of giving back, especially during challenging times such as the COVID-19 lockdown. By offering free online classes and hosting various events, we aim to support and uplift students who may have missed out on their regular activities. Our dedication to community service drives everything we do, ensuring that our efforts directly benefit those we serve.',
+    },
+    {
+      ref: '02',
+      name: 'Passion for Education',
+      description:
+        'Education lies at the heart of our mission. We believe in the transformative power of learning and strive to ignite a passion for education within our community. Each of our classes is led by high school instructors who are not only talented but also deeply passionate about their subjects. By fostering a love for learning, we empower students to reach their full potential and pursue their academic interests with enthusiasm.',
+    },
+  ],
+  [
+    {
+      ref: '03',
+      name: 'Empowerment through Skill Development',
+      description:
+        "We are committed to empowering individuals by providing them with the tools and resources they need to succeed. Through our diverse range of classes, workshops, and events, we aim to equip students with valuable skills that extend beyond the classroom. Whether it's honing their academic abilities or cultivating leadership and teamwork skills, we believe in the power of education to empower individuals and enrich their lives.",
+    },
+    {
+      ref: '04',
+      name: 'Transparency and Accountability',
+      description:
+        'As a nonprofit organization, transparency and accountability are fundamental to our operations. We are committed to being transparent about how we use our funds and resources, ensuring that they are allocated efficiently to support our core values of education and community service. Additionally, we hold ourselves accountable for the impact of our programs, regularly evaluating and adapting our initiatives to better meet the needs of the community. By upholding high standards of transparency and accountability, we strive to build trust and credibility with our stakeholders.',
+    },
+  ],
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-8 lg:gap-12">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Values</h2>
+      <div class="grid gap-8 lg:grid-cols-2">
+        {
+          values.map((column, index) => (
+            <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
+              {column.map((value) => (
+                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+                  <p class="text-sm">{value.ref}</p>
+                  <div class="flex flex-col gap-4">
+                    <h3 class="text-xl font-medium">{value.name}</h3>
+                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                      {value.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
