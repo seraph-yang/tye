@@ -1,6 +1,6 @@
 ---
 step: '03'
-layout: '../../layouts/MagazineLayout.astro'
+layout: '../../layouts/Layout.astro'
 title: Social Media
 author: Allison Lao
 description: "Allison Lao is an eighth-grader attending Bret Harte Middle School. She enjoys writing persuasive texts that make people think. Her hobbies include art and volleyball."
