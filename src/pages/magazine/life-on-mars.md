@@ -1,6 +1,6 @@
 ---
 step: '01'
-layout: '../../layouts/MagazineLayout.astro'
+layout: '../../layouts/Layout.astro'
 title: Life on Mars
 author: Noelle Kraver
 description: "Noelle Kraver is nine years old and a third grader at Valley Christian Elementary School. She loves to write and tell stories, especially making up new characters, new places, and new adventures. Noelle loves science and loves to draw and build too; just like her story, she really does want to be an architect on Mars someday."
