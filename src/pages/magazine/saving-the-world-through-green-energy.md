@@ -1,6 +1,6 @@
 ---
 step: '02'
-layout: '../../layouts/MagazineLayout.astro'
+layout: '../../layouts/Layout.astro'
 title: Saving the World Through Green Energy
 author: Evan Zhou
 description: "Evan Zhou is currently twelve years old and a sixth grader at Valley Christian Junior High School. He has been interested in writing since he was little and really enjoys creating all forms of literature, from poetry to essays. While he is not putting all of his ideas down, he likes to program, speed solve Rubik’s cubes, or post videos on his YouTube channel, \"The Superflip.\""
